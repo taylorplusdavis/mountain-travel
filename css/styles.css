@@ -227,6 +227,7 @@ header nav li {
   color: #1d1e20;
   padding: 10px;
   opacity: .75;
+  text-align: center;
 }
 
 .testimonials .grid li {
@@ -265,8 +266,11 @@ header nav li {
 
 .learnmore input {
   font-size: 1.7rem;
-  margin: 10px 10px;
-  padding: 5px 0;
+  width: 100%;
+}
+
+.learnmore button {
+  justify-content: center;
 }
 
 /* Footer  */
@@ -286,9 +290,10 @@ section.footer {
 }
 
 /* Media Queries */
-@media (max-width:800px) {
+@media (max-width:850px) {
   section {
-    padding: 10px;
+    padding: 0px;
+    margin: 0 0 20px;
   }
 
   header {
@@ -298,5 +303,33 @@ section.footer {
 
   ul>li {
     padding: 5px;
+  }
+
+  .hero-content-area {
+    font-size: 100%;
+  }
+
+  .hero h1 {
+    letter-spacing: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .destinations .grid li.small, .destinations .grid li.large {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .testimonials .grid li, .destinations .grid li, .packages .grid li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid {
+    flex-direction: column;
   }
 }
