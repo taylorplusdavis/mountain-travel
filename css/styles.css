@@ -321,15 +321,14 @@ section.footer {
 
   .destinations .grid li.small, .destinations .grid li.large {
     flex-basis: 100%;
-    max-width: 100%;
   }
 
-  .testimonials .grid li, .destinations .grid li, .packages .grid li {
+  .packages .grid li, .testimonials .grid li {
     margin: 0;
     padding: 0;
   }
 
-  .grid {
+  .packages .grid {
     flex-direction: column;
   }
 }
