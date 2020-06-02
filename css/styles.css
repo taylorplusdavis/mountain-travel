@@ -254,23 +254,28 @@ header nav li {
 }
 
 /* Learn More Section */
+.learnmore li {
+  padding: 10px;
+}
+
 .learnmore a.btn {
   padding: 20px 46px;
+}
+
+.learnmore button {
+  justify-content: center;
 }
 
 .learnmore .grid {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .learnmore input {
-  font-size: 1.7rem;
-  width: 100%;
-}
-
-.learnmore button {
-  justify-content: center;
+  height: 40px;
+  width: 230px;
+  margin-bottom: 20px;
+  margin-top: -60px;
 }
 
 /* Footer  */
@@ -328,7 +333,21 @@ section.footer {
     padding: 0;
   }
 
-  .packages .grid {
+  b .packages .grid {
     flex-direction: column;
   }
+
+  section.learnmore {
+    padding-bottom: 30px;
+    margin: 0;
+    padding: 0 0 200px;
+  }
+
+  form.learnmore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+}
 }
